@@ -4,6 +4,8 @@
  */
 await import("./src/env.mjs");
 
+
+
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
@@ -18,5 +20,15 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
+  
 };
 export default config;
+
