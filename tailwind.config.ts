@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'lobster': ['Poppins', 'sans-serif']
+        'lobster': ['var(--font-lobster)', 'mono']
       },
     },
   },
