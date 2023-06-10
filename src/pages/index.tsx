@@ -1,6 +1,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import navStyles from "~/styles/navbar.module.css"
 /* <div className="w-[80%] relative h-[25vh] mt-[-12.5vh] bg-slate-300"> {/*Take Height Value, divide by 2 to get mt- value*/
 //fff
 //</div> */
@@ -22,12 +23,11 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className="w-[80%] relative h-[8vh] mt-[-4vh] bg-slate-300">
-          
+        <div className="w-[80%] relative h-[8vh] mt-[-4vh] bg-gray-100 rounded-3xl shadow-xl flex flex-auto overflow-hidden items-center justify-center">
+          <NavItem text="Products"></NavItem>
+          <NavItem text="Recipes"></NavItem>
+          <NavItem text="Shop Finder"></NavItem>
         </div>
-
-
-
         <div className="mx-auto justify-center text-4xl mt-6 text-center">
           <p className="font-lobster">Any Icecream. Any Occasion</p>
         </div>
@@ -71,6 +71,17 @@ function ProductDisplayComponent({source, displayText, offset}: {source: string,
       <div className="mx-auto text-2xl mt-1 font-sans">
         {displayText}
       </div>
+    </div>
+  )
+}
+
+function NavItem({text}: {text:string}) {
+  return(
+    <div className="flex items-center justify-center w-full text-2xl flex-grow">
+      <div className={"transition-all px-4 py-1 rounded-full hover:bg-gray-100 hover:shadow-md"}>
+        <p className="under">{text}</p>
+      </div>
+
     </div>
   )
 }
