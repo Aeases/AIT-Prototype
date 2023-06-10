@@ -1,8 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-
 /* <div className="w-[80%] relative h-[25vh] mt-[-12.5vh] bg-slate-300"> {/*Take Height Value, divide by 2 to get mt- value*/
 //fff
 //</div> */
@@ -63,8 +61,8 @@ const Home: NextPage = () => {
 export default Home;
 
 function ProductDisplayComponent({source, displayText, offset}: {source: string, displayText: string, offset?: number}) {
-  if (!offset) {let offset = 0}
-  let ImageClassName = `w-full brightness-90 transition-all duration-500 group-hover:brightness-95 mt-[-${offset}px] group-hover:scale-110`
+  if (!offset) {offset = 0}
+  const ImageClassName = `w-full brightness-90 transition-all duration-500 group-hover:brightness-95 mt-[-${offset}px] group-hover:scale-110`
   return(
     <div className="flex flex-col p-1 bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-200 group">
       <div className="max-w-sm overflow-hidden rounded-xl ">
