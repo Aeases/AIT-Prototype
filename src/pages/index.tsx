@@ -11,15 +11,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center ">
-        <div className="m-2 bg-slate-200 w-full h-20 flex flex-row justify-center">
-          <div className="font-sans justify-center w-max h-full text-center items-center">Internatioanl Growers Association</div>
+        <div className="h-[50vh] overflow-hidden">
+          <video className="relative left-0 right-0 top-[-75%] -z-10" loop={true} autoPlay={true} muted={true} disablePictureInPicture controls={false} src="/videos/product.mp4"></video>
+        </div>
+        <div className="m-2 bg-slate-200 w-[85%] h-20 flex flex-row justify-center">
+          <div className="font-sans justify-center w-max h-full text-center items-center">Local Produce</div>
           <div className="my-4 mx-3 border-slate-100 border-[0.1rem] text-slate-100 rounded-lg w-full flex items-center justify-center justify-items-center"><p className="mb-[0.15rem]">Corporate</p></div>
           <div className="my-4 mx-2 bg-slate-600 w-full flex items-center justify-center"><p>fff</p></div>
           <div className="my-4 mx-2 bg-slate-600 w-full flex items-center justify-center"><p>fff</p></div>
           <div className="my-4 mx-3 border-slate-100 border-[0.1rem] text-slate-100 rounded-lg w-full flex items-center justify-center justify-items-center flex-shrink"><p className="mb-[0.15rem]">Login</p></div>
         </div>
       <div>
-        <div className="mx-auto justify-center text-3xl mt-6 text-center font-lobster">
+        <div className="mx-auto justify-center text-4xl mt-6 text-center">
           <p className="font-lobster">Lowest and Local</p>
         </div>
         <div className="grid grid-cols-3 gap-4 mx-auto mt-6 px-36">
