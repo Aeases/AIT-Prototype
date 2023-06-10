@@ -64,7 +64,7 @@ function ProductDisplayComponent({source, displayText, offset}: {source: string,
   if (!offset) {offset = 0}
   const ImageClassName = `w-full brightness-90 transition-all duration-500 group-hover:brightness-95 mt-[-${offset}px] group-hover:scale-110`
   return(
-    <div className="flex flex-col p-1 bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-200 group">
+    <div className="flex flex-col p-1 rounded-2xl shadow-md hover:shadow-xl transition-all duration-200 group">
       <div className="max-w-sm overflow-hidden rounded-xl ">
         <Image src={source} alt={displayText} width="500" height="500"  className={ImageClassName}></Image>
       </div>
