@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         <div className="grid grid-cols-3 gap-4 mx-auto mt-6 px-4"> 
           <ProductDisplayComponent displayText="Sticks" source="/pictures/conno-stick.webp"/>
           <ProductDisplayComponent displayText="Tubs" source="/pictures/conno-tub.webp"/>
-          <ProductDisplayComponent displayText="Tubs" source="/pictures/conno-easter.webp"/>
+          <ProductDisplayComponent displayText="Easter Specials" source="/pictures/conno-easter.webp"/>
         </div>
 
         <div className="w-full bg-stone-500 border-t-stone-400 border-spacing-3 s-2 border-t-4 h-96 mt-24">
