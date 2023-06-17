@@ -9,7 +9,7 @@ export function ProductComponent({source, displayText, description_text}: {sourc
           <Image src={source} alt={displayText} width="300" height="500"  className={ImageClassName}></Image>
         </div>
         <div className="mr-auto mt-1 ml-2 w-full">
-          <p className="text-2xl font-sans">{displayText}</p>
+          <p className="text-2xl font-sans font-bold text-center">{displayText}</p>
           <div className="w-full h-[0.01rem] bg-gray-300 my-2 "></div>
           <p className="font-mono mt-2">{description_text}</p>
         </div>

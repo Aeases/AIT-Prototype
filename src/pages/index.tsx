@@ -6,12 +6,12 @@ import { ProductDisplayComponent } from "~/components/ProductDisplayComponent";
 import { NavItem } from "~/components/NavItem";
 import { ProductComponent } from "~/components/ProductComponent";
 import { Footer } from "~/components/Footer";
-import { Gitgraph } from "@gitgraph/react";
 import { ProductComponentTest } from "~/components/ProductComponentTest";
 /* <div className="w-[80%] relative h-[25vh] mt-[-12.5vh] bg-slate-300"> {/*Take Height Value, divide by 2 to get mt- value*/
 //fff
 //</div> */
 import { Carousel } from 'flowbite-react';
+import Link from "next/link";
 
 
 const Home: NextPage = () => {
@@ -39,6 +39,7 @@ const Home: NextPage = () => {
         <div className="mx-auto justify-center text-4xl mt-6 text-center">
           <p className="font-lobster">Any Icecream. Any Occasion</p>
         </div>
+        <Link href={"/test"} >bruh</Link>
         <div className="grid grid-cols-3 gap-4 mx-auto mt-6 px-4"> 
           <ProductDisplayComponent displayText="Sticks" source="/pictures/conno-stick.webp"/>
           <ProductDisplayComponent displayText="Tubs" source="/pictures/conno-tub.webp"/>
@@ -48,28 +49,7 @@ const Home: NextPage = () => {
         <ProductComponentTest displayText="fff" description_text="fffff" source="/pictures/conno-easter.webp"/>
         </div>
 
-        <Carousel className='w-full h-full'>
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-        />
-        <img
-          alt="..."
-          src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-        />
-      </Carousel>
+
 
         <Footer />
       </main>
