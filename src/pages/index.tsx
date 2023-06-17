@@ -6,9 +6,13 @@ import { ProductDisplayComponent } from "~/components/ProductDisplayComponent";
 import { NavItem } from "~/components/NavItem";
 import { ProductComponent } from "~/components/ProductComponent";
 import { Footer } from "~/components/Footer";
+import { Gitgraph } from "@gitgraph/react";
+import { ProductComponentTest } from "~/components/ProductComponentTest";
 /* <div className="w-[80%] relative h-[25vh] mt-[-12.5vh] bg-slate-300"> {/*Take Height Value, divide by 2 to get mt- value*/
 //fff
 //</div> */
+import { Carousel } from 'flowbite-react';
+
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/pictures/conno-favicon.png" />
       </Head>
       <main className="flex w-full flex-col items-center">
-
+ 
         <div className="overflow-hidden w-full h-auto bg-gray-900 -z-20">
           <div className="relative">
             <video className="object-cover object-center relative h-[50vh] w-full left-0 right-0 top-[-75%] -z-10" loop={true} autoPlay={true} muted={true} disablePictureInPicture controls={false} src="/videos/product.mp4"></video>
@@ -40,8 +44,32 @@ const Home: NextPage = () => {
           <ProductDisplayComponent displayText="Tubs" source="/pictures/conno-tub.webp"/>
           <ProductDisplayComponent displayText="Easter Specials" source="/pictures/conno-easter.webp"/>
         </div>
-        <ProductComponent description_text="great description that is extremely long lorem ipsum" displayText="lo" source="/pictures/conno-easter.webp"/>
+        <div className="">
+        <ProductComponentTest displayText="fff" description_text="fffff" source="/pictures/conno-easter.webp"/>
+        </div>
 
+        <Carousel className='w-full h-full'>
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
+        />
+        <img
+          alt="..."
+          src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
+        />
+      </Carousel>
 
         <Footer />
       </main>

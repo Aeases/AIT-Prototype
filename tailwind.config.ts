@@ -1,7 +1,10 @@
 import { type Config } from "tailwindcss";
 
 export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js"
+],
   theme: {
     extend: {
       fontFamily: {
@@ -19,5 +22,6 @@ export default {
       // => @media (min-width: 1440px) { ... }
     },
   },
-  plugins: [],
-} satisfies Config;
+  plugins: [
+    require('flowbite/plugin')
+]} satisfies Config;

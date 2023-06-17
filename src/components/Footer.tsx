@@ -10,7 +10,7 @@ export function Footer() {
                 <FooterItem text="About"/>
                 <FooterItem text="Corporate"/>
                 <FooterItem text="Contact Info"/>
-                <FontAwesomeIcon icon="twitter"/>
+                {/* <FontAwesomeIcon icon="twitter"/> */}
             </div>
           <div className="justify-center w-full font-sans flex flex-col">
             <a className="text-slate-200 w-full">fff</a>
