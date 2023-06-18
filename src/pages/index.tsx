@@ -9,11 +9,14 @@ import { Footer } from "~/components/Footer";
 /* <div className="w-[80%] relative h-[25vh] mt-[-12.5vh] bg-slate-300"> {/*Take Height Value, divide by 2 to get mt- value*/
 //fff
 //</div> */
-import { Carousel } from 'flowbite-react';
+import { Carousel, Spinner } from 'flowbite-react';
 import Link from "next/link";
+import { useState } from "react";
 
 
 const Home: NextPage = () => {
+  const [Loading_Video, setLoading] = useState(false)
+
   return (
     <>
       <Head>
@@ -22,11 +25,18 @@ const Home: NextPage = () => {
         <link rel="icon" href="/pictures/conno-favicon.png" />
       </Head>
       <main className="flex w-full flex-col items-center">
- 
+      {Loading_Video && 
+  <div className="bg-black flex justify-center items-center transition-all opacity-100 ease-in-out duration-1000 h-screen" id="page-loader">
+  <div className="absolute top-1/2 left-1/2 -ml-24 -mt-3">
+    <div className="rounded-lg shadow-lg p-2 text-3xl animate-pulse flex items-baseline"><p>Loading...</p></div>
+    <Spinner color="info" className="mx-auto w-full mt-2 h-12"/>
+  </div>
+</div>}
         <div className="overflow-hidden w-full h-auto bg-gray-900 -z-20">
           <div className="relative">
-            <video className="object-cover object-center relative h-[50vh] w-full left-0 right-0 top-[-75%] -z-10" loop={true} autoPlay={true} muted={true} disablePictureInPicture controls={false} src="/videos/product.mp4"></video>
-            <img src="/pictures/Connoisseur-Logo.webp" className="absolute w-full left-0 right-0 top-[5%] lg:top-[-10%] scale-75 lg:scale-50"></img>
+          {Loading_Video && (<Spinner color="failure" id="Spinner" className="absolute top-[20%] overflow-hidden left-[25%] h-[50%] w-[50%] "/>)}
+            <video onLoadStart={() => setLoading(true)} onLoadedData={() => setLoading(false)} className="object-cover object-center relative h-[50vh] w-full left-0 right-0 top-[-75%] -z-10" loop={true} autoPlay={true} muted={true} disablePictureInPicture controls={false} src="/videos/product.mp4"></video>
+          {!Loading_Video && <img src="/pictures/Connoisseur-Logo.webp" className="absolute w-full left-0 right-0 top-[5%] lg:top-[-10%] scale-75 lg:scale-50"></img>}
           </div>
         </div>
 
