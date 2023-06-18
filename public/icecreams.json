@@ -22,6 +22,24 @@
       "Current_Selected_Price": 999,
       "Current_Selected_Icecream_Picture": "https://cdn0.woolworths.media/content/wowproductimages/large/633602.jpg",
       "Current_Selected_Icecream": "Sumatran Coconut with Chocolate Fudge Sauce"
+    },
+    {
+      "IceCreamSlug": "AlmondVanilla",
+      "Current_Selected_Price": 999,
+      "Current_Selected_Icecream_Picture": "https://connoisseuricecream.com.au/wp-content/uploads/2021/06/Connoisseur-July21-5-780x780.jpg",
+      "Current_Selected_Icecream": "Almond Vanilla"
+    },
+    {
+      "IceCreamSlug": "CaramelHoneyMacadamia",
+      "Current_Selected_Price": 999,
+      "Current_Selected_Icecream_Picture": "/pictures/CaramelHoneyMacadamia.jpeg",
+      "Current_Selected_Icecream": "Caramel Honey with Roasted Macadamia"
+    },
+    {
+      "IceCreamSlug": "MurrayRiverSaltedCaramel",
+      "Current_Selected_Price": 999,
+      "Current_Selected_Icecream_Picture": "https://connoisseuricecream.com.au/wp-content/uploads/2021/06/SaltedCaramel_0001_Connoissuer_May20_4-5-3.jpg",
+      "Current_Selected_Icecream": "Murray River Salted Caramel with Macadamia and Hazelnut"
     }
   ]
   
