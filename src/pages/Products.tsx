@@ -1,3 +1,4 @@
+import { Footer } from "~/components/Footer";
 import { NavItem } from "~/components/NavItem";
 import { ProductComponent } from "~/components/ProductComponent";
 
@@ -19,6 +20,7 @@ export default function Products() {
         <ProductComponent description_text="delcious icecream best icecream cant get better" displayText="Caramel" source="/pictures/conno-tub.webp" />
         <ProductComponent description_text="delcious icecream best icecream cant get better" displayText="Caramel" source="/pictures/conno-tub.webp" />
       </div>
+      <Footer />
     </>
   )
 }
