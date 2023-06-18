@@ -15,7 +15,7 @@ import { useState } from "react";
 
 
 const Home: NextPage = () => {
-  const [Loading_Video, setLoading] = useState(false)
+  const [Loading_Video, setLoading] = useState(true)
 
   return (
     <>
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
         <div className="overflow-hidden w-full h-auto bg-gray-900 -z-20">
           <div className="relative">
           {Loading_Video && (<Spinner color="failure" id="Spinner" className="absolute top-[20%] overflow-hidden left-[25%] h-[50%] w-[50%] "/>)}
-            <video onLoadStart={() => setLoading(true)} onLoadedData={() => setLoading(false)} className="object-cover object-center relative h-[50vh] w-full left-0 right-0 top-[-75%] -z-10" loop={true} autoPlay={true} muted={true} disablePictureInPicture controls={false} src="/videos/product.mp4"></video>
+            <video onLoadedData={() => setLoading(false)} className="object-cover object-center relative h-[50vh] w-full left-0 right-0 top-[-75%] -z-10" loop={true} autoPlay={true} muted={true} disablePictureInPicture controls={false} src="/videos/product.mp4"></video>
           {!Loading_Video && <img src="/pictures/Connoisseur-Logo.webp" className="absolute w-full left-0 right-0 top-[5%] lg:top-[-10%] scale-75 lg:scale-50"></img>}
           </div>
         </div>
