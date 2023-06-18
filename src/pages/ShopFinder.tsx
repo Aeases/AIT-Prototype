@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { Spinner } from "flowbite-react";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import { Footer } from "~/components/Footer";
 import Header from "~/components/Header";
@@ -14,6 +15,11 @@ export default function ShopFinder() {
 
     return(
     <>
+        <Head>
+        <title>Connoisseur</title>
+        <meta name="description" content="Any Icecream, Any Occasion" />
+        <link rel="icon" href="/pictures/conno-favicon.png" />
+      </Head>
         <Header />
         <div className="flex col-span-2 flex-row h-full mt-6">
             <div className="border-1 rounded-2xl shadow-inner overflow-hidden m-2 ml-auto ">

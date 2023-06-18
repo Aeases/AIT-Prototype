@@ -5,6 +5,7 @@ import icecreamsImport from "public/icecreams.json"
 import icecreams from "public/icecreams.json"
 import { type } from 'os';
 import { Footer } from '../../components/Footer';
+import Head from 'next/head';
 export default function Page() {
 
     interface Iicecream {
@@ -29,6 +30,11 @@ export default function Page() {
     })
   return(
 <>
+      <Head>
+        <title>Connoisseur</title>
+        <meta name="description" content="Any Icecream, Any Occasion" />
+        <link rel="icon" href="/pictures/conno-favicon.png" />
+      </Head>
     <div className="h-[100vh] overflow-hidden md:max-w-[85%] max-w-none mx-auto">
     <div className="flex flex-row w-full items-center p-3">
         <button onClick={() => void router.push("/Products")} type="button" className="transition-shadow flip-svg-horizontal border hover:shadow-lg  font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 ">
