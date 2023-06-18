@@ -11,7 +11,7 @@ interface Iicecream {
 }
 
 export default function Products() {
-  let typedIcecreams = icecreams as unknown as Iicecream[]
+  const typedIcecreams = icecreams as unknown as Iicecream[]
 
   
   return (
@@ -19,7 +19,7 @@ export default function Products() {
     <Header /> 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 px-4">
           {typedIcecreams.map((e) => {
-            return(<ProductComponent path={`/purchase/${e.IceCreamSlug}`} description_text="delcious icecream best icecream cant get better" displayText={e.Current_Selected_Icecream} source={e.Current_Selected_Icecream_Picture} />)
+            return(<ProductComponent key={e.IceCreamSlug} path={`/purchase/${e.IceCreamSlug}`} description_text="delcious icecream best icecream cant get better" displayText={e.Current_Selected_Icecream} source={e.Current_Selected_Icecream_Picture} />)
           })}
       </div>
       <Footer />
