@@ -9,7 +9,7 @@ export default function Products() {
         <div className=" mx-auto w-[80%] relative h-[8vh] mt-[-4vh] bg-gray-100 rounded-3xl shadow-xl flex flex-auto overflow-hidden items-center justify-center">
         <NavItem path="/Products" text="Products"></NavItem>|
         <NavItem path="/" text="Home"></NavItem>|
-        <NavItem path="/Products" text="Shop Finder"></NavItem>
+        <NavItem path="/ShopFinder" text="Shop Finder"></NavItem>
       </div>
       <div className="grid grid-cols-3 gap-4 mt-6 px-4">
         <ProductComponent description_text="delcious icecream best icecream cant get better" displayText="Caramel" source="/pictures/conno-tub.webp" />
