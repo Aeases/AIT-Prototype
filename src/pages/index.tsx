@@ -32,9 +32,9 @@ const Home: NextPage = () => {
         </div>
 
         <div className="w-[80%] relative h-[8vh] mt-[-4vh] bg-gray-100 rounded-3xl shadow-xl flex flex-auto overflow-hidden items-center justify-center">
-          <NavItem text="Products"></NavItem>
-          <NavItem text="Recipes"></NavItem>l
-          <NavItem text="Shop Finder"></NavItem>
+          <NavItem path="/Products" text="Products"></NavItem>
+          <NavItem path="/" text="Home"></NavItem>l
+          <NavItem path="/Products" text="Shop Finder"></NavItem>
         </div>
         <div className="mx-auto justify-center text-4xl mt-6 text-center">
           <p className="font-lobster">Any Icecream. Any Occasion</p>

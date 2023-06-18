@@ -25,6 +25,10 @@
   transform-origin: center;
 }
 
+.flip-svg-horizontal {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 
 /* @font-face {
     font-family: "Lobster";
