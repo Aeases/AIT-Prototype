@@ -26,13 +26,13 @@ const Home: NextPage = () => {
         <div className="overflow-hidden w-full h-auto bg-gray-900 -z-20">
           <div className="relative">
             <video className="object-cover object-center relative h-[50vh] w-full left-0 right-0 top-[-75%] -z-10" loop={true} autoPlay={true} muted={true} disablePictureInPicture controls={false} src="/videos/product.mp4"></video>
-            <img src="/pictures/Connoisseur-Logo.webp" className="absolute top-0 max-w-[75%] min-w-[155px] "></img>
+            <img src="/pictures/Connoisseur-Logo.webp" className="absolute w-full left-0 right-0 top-[5%] lg:top-[-10%] scale-75 lg:scale-50"></img>
           </div>
         </div>
 
         <div className="w-[80%] relative h-[8vh] mt-[-4vh] bg-gray-100 rounded-3xl shadow-xl flex flex-auto overflow-hidden items-center justify-center">
-          <NavItem path="/Products" text="Products"></NavItem>
-          <NavItem path="/" text="Home"></NavItem>l
+          <NavItem path="/Products" text="Products"></NavItem>|
+          <NavItem path="/" text="Home"></NavItem>|
           <NavItem path="/ShopFinder" text="Shop Finder"></NavItem>
         </div>
         <div className="mx-auto justify-center text-4xl mt-6 text-center">
