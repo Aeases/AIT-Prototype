@@ -6,7 +6,6 @@ import { ProductDisplayComponent } from "~/components/ProductDisplayComponent";
 import { NavItem } from "~/components/NavItem";
 import { ProductComponent } from "~/components/ProductComponent";
 import { Footer } from "~/components/Footer";
-import { ProductComponentTest } from "~/components/ProductComponentTest";
 /* <div className="w-[80%] relative h-[25vh] mt-[-12.5vh] bg-slate-300"> {/*Take Height Value, divide by 2 to get mt- value*/
 //fff
 //</div> */
@@ -39,14 +38,10 @@ const Home: NextPage = () => {
         <div className="mx-auto justify-center text-4xl mt-6 text-center">
           <p className="font-lobster">Any Icecream. Any Occasion</p>
         </div>
-        <Link href={"/test"} >bruh</Link>
         <div className="grid grid-cols-3 gap-4 mx-auto mt-6 px-4"> 
           <ProductDisplayComponent displayText="Sticks" source="/pictures/conno-stick.webp"/>
           <ProductDisplayComponent displayText="Tubs" source="/pictures/conno-tub.webp"/>
           <ProductDisplayComponent displayText="Easter Specials" source="/pictures/conno-easter.webp"/>
-        </div>
-        <div className="">
-        <ProductComponentTest displayText="fff" description_text="fffff" source="/pictures/conno-easter.webp"/>
         </div>
 
 

@@ -4,6 +4,7 @@ import Image from "next/image";
 import icecreamsImport from "public/icecreams.json"
 import icecreams from "public/icecreams.json"
 import { type } from 'os';
+import { Footer } from '../../components/Footer';
 export default function Page() {
 
     interface Iicecream {
@@ -26,39 +27,8 @@ export default function Page() {
             Current_Selected_Price = e.Current_Selected_Price
         }
     })
-
-
-
-
-
-/*     switch (Current_Selected_Icecream) {
-        case "ChocolateBrownieCustard":
-            Current_Selected_Price = 99.95
-            Current_Selected_Icecream_Picture = "https://cdn.shopify.com/s/files/1/0564/1873/0067/products/Milk_20_26_20Bread_20Combo_20Deliverect_20-_20Press_20_26_20Grocers_20Co_20_37_-61fe9fd23902b9a6835e70a2.png?v=1681696898"
-            Current_Selected_Icecream = "Chocolate Brownie Custard"
-            break;
-    
-        case "Coookies&Cream":
-            Current_Selected_Price = 150
-            Current_Selected_Icecream_Picture = "https://www.chewoutloud.com/wp-content/uploads/2013/08/cookies-and-cream-in-white-bowl-500x500.jpg"
-            Current_Selected_Icecream = "Cookies & Cream"
-            break;
-
-        case "Cookies&CreamStick":
-            Current_Selected_Icecream = "Cookies & Cream Stick"
-            Current_Selected_Price = 20
-            Current_Selected_Icecream_Picture = "https://connoisseuricecream.com.au/wp-content/uploads/2021/06/Connoisseur_ProductPage_Thumbnail_Minis_Cookies_Cream_MP4.png"
-        case "SumatranCoconut":
-            Current_Selected_Icecream = "Sumatran Coconut with Chocolate Fudge Sauce"
-            Current_Selected_Price = 999
-            Current_Selected_Icecream_Picture = "https://cdn0.woolworths.media/content/wowproductimages/large/633602.jpg"
-
-        default:
-            break;
-    } */
-
-
   return(
+<>
     <div className="h-[100vh] overflow-hidden md:max-w-[85%] max-w-none mx-auto">
     <div className="flex flex-row w-full items-center p-3">
         <button onClick={() => void router.push("/Products")} type="button" className="transition-shadow flip-svg-horizontal border hover:shadow-lg  font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 ">
@@ -169,5 +139,8 @@ export default function Page() {
         </div>
     </div> 
 </div>
+<Footer />
+</>
+
 )
 }

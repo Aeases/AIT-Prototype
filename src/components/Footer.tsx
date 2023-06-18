@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export function Footer() {
     return(
-      <div className="w-full bg-stone-500 border-t-stone-400 border-spacing-3 s-2 border-t-4 h-96 mt-24">
+      <div className="w-[98%] shadow-inner self-center rounded-3xl mx-auto bg-neutral-100 border-spacing-3 s-2 border-t-4 h-96 mt-24 mb-4">
         <div className="m-6 grid grid-cols-2">
             <div className="justify-start w-full font-sans ml-12 flex flex-col gap-8">
                 <FooterItem text="About"/>
@@ -13,7 +13,7 @@ export function Footer() {
                 {/* <FontAwesomeIcon icon="twitter"/> */}
             </div>
           <div className="justify-start w-full font-sans flex flex-col gap-3">
-            <p className="text-white text-lg font-bold">Prototype Site Map</p>
+            <p className="text-black text-lg font-bold">Prototype Site Map</p>
                 <FooterItem path="/" text="Home Page"/>
                 <FooterItem path="/Products" text="Products Page"/>
                 <div className="tooltip">
@@ -32,11 +32,11 @@ export function Footer() {
 function FooterItem({text, path}: {text: string, path? : string}) {
   if (path) {
     return(
-      <a href={`${path}`} className="text-gray-200 underline-offset-4 underline hover:underline-offset-1 transition-all">{text}</a>
+      <a href={`${path}`} className="text-black-700 underline-offset-4 underline hover:underline-offset-1 transition-all">{text}</a>
   )
   } else {
     return(
-      <a className="text-gray-200 underline-offset-4 underline hover:underline-offset-1 transition-all">{text}</a>
+      <a className="text-gray-700 underline-offset-4 underline hover:underline-offset-1 transition-all">{text}</a>
     )
   }
 

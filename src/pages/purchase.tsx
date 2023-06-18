@@ -2,6 +2,7 @@ import { ProductComponent } from "~/components/ProductComponent";
 import { ProductDisplayComponent } from "~/components/ProductDisplayComponent";
 import Image from "next/image";
 import Router from "next/router";
+import { Footer } from "flowbite-react";
 
 export default function Purchase() {
     // These should be passed into the Purchase page by an dynamic route so that they are set by the button/URL you click on
@@ -9,6 +10,7 @@ export default function Purchase() {
     const Current_Selected_Price = 50
     const Current_Selected_Icecream_Picture = "/pictures/conno-tub.webp"
     return(
+        <>
         <div className="h-[100vh] overflow-hidden md:max-w-[85%] max-w-none mx-auto">
             <div className="flex flex-row w-full items-center p-3">
                 <button onClick={() => void Router.push("/Products")} type="button" className="transition-shadow flip-svg-horizontal border hover:shadow-lg  font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 ">
@@ -118,6 +120,9 @@ export default function Purchase() {
                     </div>
                 </div>
             </div> 
+
         </div>
+        <Footer />
+    </>
     )
 }
